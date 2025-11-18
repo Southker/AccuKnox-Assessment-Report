@@ -18,6 +18,7 @@ Apply strict server-side validation and reject any input containing HTML tags. E
 <img width="983" height="458" alt="Screenshot From 2025-11-13 18-57-53" src="https://github.com/user-attachments/assets/6a96d11c-2525-4c4f-b948-8f80c0e5ac44" />
 
 
+
 <img width="983" height="458" alt="Screenshot From 2025-11-13 18-58-09" src="https://github.com/user-attachments/assets/d256ef8e-9351-48bb-a81e-33b3c0c41feb" />
 
 
@@ -33,6 +34,7 @@ Injection of arbitrary HTML elements leads to potential execution of attacker-su
 Apply strict output encoding for values inserted into HTML attributes. Validate ParamWidth to only allow numeric characters. Reject or sanitize characters like <, >, ", ' also implement Content Security Policy (CSP) along side.
 
 <img width="1903" height="764" alt="Screenshot From 2025-11-13 19-38-28" src="https://github.com/user-attachments/assets/c46736a0-7337-41d9-87ca-4a6bb7cdfed1" />
+
 
 <img width="1903" height="764" alt="Screenshot From 2025-11-13 19-38-45" src="https://github.com/user-attachments/assets/c917feff-9fb5-4a39-b12d-579850614399" />
 
