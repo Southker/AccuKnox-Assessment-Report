@@ -56,7 +56,7 @@ Avoid sending credentials in responses, enforce strict server‑side validation 
 ### 4.	XXS Reflected (JSON)
 
 #### Description 
-Inserting js payload like <img src=x onerror=alert(document.cookie)> in the "search for a movie" field and clicking on search button pop up with the alert message long with the user cookies.
+Inserting js payload like `<img src=x onerror=alert(document.cookie)>` in the "search for a movie" field and clicking on search button pop up with the alert message long with the user cookies.
 
 #### Impact
 Executing injected JavaScript allows attackers to steal session cookies, impersonate users, and perform unauthorized actions within the application.
