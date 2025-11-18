@@ -6,7 +6,7 @@
 
 #### Description
 The application fails to properly sanitize user-supplied input in the First Name field. When HTML tags such as:
-<a href="http://abc.com">click</a> are submitted, they are rendered directly on the webpage without encoding. This allows an attacker to inject arbitrary HTML into the page, potentially modifying page content, embedding malicious links, or performing social engineering attacks. Because the injected payload is reflected back to the user immediately, this issue is categorized as Reflected HTML Injection. Although it does not execute JavaScript like XSS, it still enables content manipulation, phishing elements, malicious redirects, and UI deception.
+`<a href="http://abc.com">click</a>` are submitted, they are rendered directly on the webpage without encoding. This allows an attacker to inject arbitrary HTML into the page, potentially modifying page content, embedding malicious links, or performing social engineering attacks. Because the injected payload is reflected back to the user immediately, this issue is categorized as Reflected HTML Injection. Although it does not execute JavaScript like XSS, it still enables content manipulation, phishing elements, malicious redirects, and UI deception.
 
 #### Impact
 Attackers can inject malicious links to trick users into clicking phishing or malware sites. Page content can be altered to mislead users or impersonate trusted elements. Can be used as a stepping stone toward more severe attacks if combined with other flaws.
