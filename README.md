@@ -19,6 +19,8 @@ Apply strict server-side validation and reject any input containing HTML tags. E
 <img width="983" height="458" alt="Screenshot From 2025-11-13 18-57-53" src="https://github.com/user-attachments/assets/6a96d11c-2525-4c4f-b948-8f80c0e5ac44" />
 
 
+<img width="983" height="458" alt="Screenshot From 2025-11-13 18-58-09" src="https://github.com/user-attachments/assets/d256ef8e-9351-48bb-a81e-33b3c0c41feb" />
+
 
 ### 2.	Iframe Injection:
 
@@ -28,6 +30,9 @@ Impact: Injection of arbitrary HTML elements leads to potential execution of att
 
 Mitigation: Apply strict output encoding for values inserted into HTML attributes. Validate ParamWidth to only allow numeric characters. Reject or sanitize characters like <, >, ", ' also implement Content Security Policy (CSP) along side.
 
+<img width="1903" height="764" alt="Screenshot From 2025-11-13 19-38-28" src="https://github.com/user-attachments/assets/c46736a0-7337-41d9-87ca-4a6bb7cdfed1" />
+
+<img width="1903" height="764" alt="Screenshot From 2025-11-13 19-38-45" src="https://github.com/user-attachments/assets/c917feff-9fb5-4a39-b12d-579850614399" />
 
 
 ### 3.	Insecure Login:
@@ -38,6 +43,7 @@ Impact: Exposure of valid login credentials allows attackers to directly access 
 
 Mitigation: Avoid sending credentials in responses, enforce strict server‑side validation and output sanitization, and ensure sensitive data is never included in client‑visible payloads.
 
+<img width="1897" height="663" alt="Screenshot From 2025-11-13 19-45-30" src="https://github.com/user-attachments/assets/4f623113-e494-4db5-9391-74a74fa01647" />
 
 
 ### 4.	XXS Reflected (JSON):
@@ -48,6 +54,9 @@ Impact: Executing injected JavaScript allows attackers to steal session cookies,
 
 Mitigation: Implement strict server‑side input validation and output encoding, and enforce Content Security Policy (CSP) headers to prevent execution of untrusted scripts.
 
+<img width="1918" height="566" alt="Screenshot From 2025-11-13 19-55-05" src="https://github.com/user-attachments/assets/4f72974c-22a3-4311-9aae-9ece4dee1bb0" />
+
+<img width="1918" height="566" alt="Screenshot From 2025-11-13 19-55-25" src="https://github.com/user-attachments/assets/3828286e-ebbe-46dd-9724-c14ed5bd015e" />
 
 
 ### 5.	IDOR:
@@ -59,6 +68,8 @@ Impact: This leads to financial loss and abuse of the payment system, enabling u
 Mitigation: Enforce strict server‑side validation of all pricing values and never rely on client‑side data for financial calculations or transaction approval.
 
 
+<img width="1918" height="566" alt="Screenshot From 2025-11-13 20-08-29" src="https://github.com/user-attachments/assets/4d4aac8f-89cc-4d5a-8997-e10720e9420e" />
+
 
 ### 6.	Information Disclosure: 
 
@@ -68,6 +79,7 @@ Impact: This can lead to unauthorized access, data leakage, or execution of sens
 
 Mitigation: Restrict direct access to sensitive files, use proper access controls, and avoid exposing or storing such endpoints in publicly accessible directories.
 
+<img width="1188" height="464" alt="Screenshot From 2025-11-14 19-09-06" src="https://github.com/user-attachments/assets/a4bf58cd-208c-4d1e-b70c-90954e77fca4" />
 
 
 ### 7.	Directory Traversal (Directories):
@@ -78,6 +90,7 @@ Impact: This exposes internal server structure and sensitive directory names, ai
 
 Mitigation: Normalize and validate paths on the server side, restrict access to allowed directories only, and block traversal patterns like ../ through strict input filtering.
 
+<img width="1578" height="765" alt="Screenshot From 2025-11-14 20-02-29" src="https://github.com/user-attachments/assets/75a714b3-a12b-4fab-a785-094b4ba9e190" />
 
 
 ### 8.	CSRF (Change Password):
@@ -88,6 +101,7 @@ Impact: Absence of a CSRF token allows attackers to trick users into unintention
 
 Mitigation: Implement anti‑CSRF tokens, enforce same‑site cookies, and validate the origin of all sensitive state‑changing requests.
 
+<img width="1578" height="765" alt="Screenshot From 2025-11-14 20-42-21" src="https://github.com/user-attachments/assets/93e45a50-ab41-4708-9b7b-4d5686cd7bc0" />
 
 
 ### 9.	HTTP Parameter Pollution:
@@ -99,6 +113,14 @@ Impact: This allows manipulation of voting results and undermines application in
 Mitigation: Enforce strict server‑side parameter validation, reject duplicate parameters, and sanitize unexpected inputs before processing.
 
 
+<img width="738" height="533" alt="Screenshot From 2025-11-17 18-11-20" src="https://github.com/user-attachments/assets/7adca41d-1694-4bd2-8fca-b84d1384718b" />
+
+
+<img width="848" height="576" alt="Screenshot From 2025-11-17 18-11-47" src="https://github.com/user-attachments/assets/c1b9e08c-b3c0-4178-9c0e-4245e25cf00d" />
+
+
+<img width="838" height="532" alt="Screenshot From 2025-11-17 18-12-03" src="https://github.com/user-attachments/assets/85074aa6-dd71-4899-8af4-bffddbd26b62" />
+
 
 ### 10.	Remote & Local File Inclusion:
 
@@ -109,6 +131,7 @@ Impact: This leads to severe information disclosure, enabling attackers to harve
 Mitigation: Strictly validate and whitelist allowed parameter values, block traversal patterns like `../`, and ensure the application never directly includes or reads files based on unsanitized user input.
 
 
+<img width="991" height="763" alt="Screenshot From 2025-11-17 18-29-59" src="https://github.com/user-attachments/assets/a65d008c-e531-4f56-9b91-cd017dc6a00f" />
 
 
 
