@@ -1,4 +1,4 @@
-# AccuKnox-Assessment-Report
+# Assessment-Report
 
 ## Vulnerability Findings
 
