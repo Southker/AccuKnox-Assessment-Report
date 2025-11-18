@@ -16,6 +16,9 @@ Mitigation:
 Apply strict server-side validation and reject any input containing HTML tags. Encode all dynamic output (HTML escape <> characters before rendering). Implement a allowlist for accepted characters in user input fields.
 
 
+<img width="983" height="458" alt="Screenshot From 2025-11-13 18-57-53" src="https://github.com/user-attachments/assets/6a96d11c-2525-4c4f-b948-8f80c0e5ac44" />
+
+
 
 ### 2.	Iframe Injection:
 
